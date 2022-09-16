@@ -1,0 +1,11 @@
+# apply config files
+kubectl apply -f client-pod.yaml
+kubectl apply -f client-node-port.yaml
+
+# check status running pods
+kubectl get pods
+# outputs client-pod
+
+# check status running services
+kubectl get services
+# outputs client-node-port and kubernetes
